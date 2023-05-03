@@ -1,7 +1,5 @@
 #la requete pour sql : [SELECT SUM(superficie) AS total_superficie FROM etage;]
 
-
-
 import mysql.connector
 
 db = mysql.connector.connect(
@@ -11,9 +9,7 @@ db = mysql.connector.connect(
     database="LaPlateforme"
 )
 
-
 cursor = db.cursor()
-
 
 query = "SELECT SUM(superficie) AS total_superficie FROM etage;"
 cursor.execute(query)
